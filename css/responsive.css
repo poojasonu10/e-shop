@@ -11,6 +11,10 @@
     .offers .offer-box .offer-info .headline-bigger {
         font-size: 3rem;
     }
+    /* Special CSS */
+    .special .countdown-container .countdown-counter li {
+        padding: 1.5rem 1rem !important;
+    }
 }
 @media (max-width:991px) {
     /* Home CSS */
@@ -18,7 +22,17 @@
         transform: translate(-66%, -50%);
     }
     /* Special CSS */
+    .special .countdown-container {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
     /* Testimonial CSS */
+    .testimonial .carousel-control-next {
+        right: -1.75rem;
+    }
+    .testimonial  .carousel-control-prev {
+        left: -1.75rem;
+    }
 }
 @media (max-width: 767px) {
     /* Home CSS */
@@ -38,7 +52,7 @@
         font-size: 1.2rem;
     }
     .home .home-banner .home-banner-text .btn-danger {
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem 1.5rem !important;
     }
     .home .slide-icon {
         font-size: 2rem;
@@ -48,7 +62,21 @@
         font-size: 0.75rem;
     }
     /* Special CSS */
+    .special {
+        padding: 4rem 0;
+    }
+    .special .countdown-container .countdown-counter li {
+        padding: 1rem !important;
+        width: 20%;
+    }
     /* Testimonial CSS */
+    .testimonial .testimonial-wrapper {
+        padding: 1rem;
+    }
+    .testimonial .carousel-control-next,
+    .testimonial .carousel-control-prev {
+        display: none;
+    }
 }
 @media (max-widht: 330px) {
     /* Home CSS */
@@ -56,4 +84,7 @@
         font-size: 1rem;
     }
     /* Product CSS */
+    .products .up_to_content h2 {
+        font-size: 0.625rem;
+    }
 }

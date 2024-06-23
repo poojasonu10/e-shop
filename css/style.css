@@ -49,7 +49,7 @@ body {
 .btn-danger {
     background: var(--bg-danger) !important;
     border-color: var(--bg-danger) !important;
-    padding: 0.8rem 1.5rem;
+    padding: 0.8rem 1.5rem !important;
     font-weight: 500;
     font-size: 1rem;
 }
@@ -300,4 +300,166 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
+}
+/* Special CSS */
+.special {
+    padding: 6rem 0;
+    background: var(--bg-light-white);
+}
+.special .countdown-container {
+    padding-top: 4.375rem;
+}
+.special .countdown-container p {
+    color: var(--text-dark-gray);
+    font-weight: 300;
+    line-height: 1.875rem;
+}
+.special .countdown-container .countdown-counter {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.875rem;
+}
+.special .countdown-container .countdown-counter li {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    background: var(--bg-white);
+    border-radius: 0.313rem;
+    padding: 2rem 1rem !important;
+    width: 15%;
+    margin: 0 0.313rem !important;
+}
+.special .countdown-container .countdown-counter li span {
+    font-weight: 500;
+}
+.special .countdown-container .countdown-price del {
+    color: var(--text-gray);
+    font-size: 1rem;
+}
+.special .special-img span {
+    background: var(--bg-danger);
+    border-radius: 0.313rem;
+    color: var(--text-white);
+    font-size: 0.813rem;
+    letter-spacing: 0.125rem;
+    line-height: 1.563rem;
+    padding: 0.125rem 0.813rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    top: 1.188rem;
+    z-index: 99;
+}
+/* Testimonial CSS */
+.testimonial {
+    padding: 5rem 0 8rem;
+}
+.testimonial .testimonial-wrapper {
+    box-shadow: 0 0 0.563rem 0 rgb(0 0 0 / 5%);
+    background: var(--bg-white);
+    margin: auto;
+    border: 0.063rem solid var(--bg-light-white);
+    border-radius: 0.625rem;
+}
+.testimonial .testimonial-wrapper img {
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    margin: 1.25rem auto;
+    object-fit: cover;
+    background-color: var(--bg-white);
+    border: 0.063rem solid var(--bg-light-white);
+}
+.testimonial .testimonial-wrapper span {
+    color: var(--text-gray);
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    display: block;
+}
+.testimonial .testimonial-wrapper p {
+    color: var(--text-gray);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.testimonial .carousel-indicators {
+    bottom: -3rem;
+}
+.testimonial .carousel-control-next {
+    right: -8.75rem;
+}
+.testimonial  .carousel-control-prev {
+    left: -8.75rem;
+}
+.testimonial .slide-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-danger);
+}
+/* Contact CSS */
+.contact {
+    padding: 4rem 0;
+    background: var(--bg-light-white);
+}
+.contact .info p a {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.75rem 0;
+    color: var(--text-black);
+}
+.contact .form-group {
+    margin-bottom: 1.5rem;
+}
+.contact .form-control {
+    height: 3.75rem;
+    padding: 0.375rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+.contact .textarea {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.1875rem;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.3125rem;
+    box-shadow: 0 0.1875rem 1.25rem 0 rgb(0 0 0 / 12%);
+}
+.contact .textarea:focus {
+    outline: none;
+    border: none;
+}
+/* Footer CSS */
+.copyright {
+    background: var(--bg-danger);
+}
+.copyright p,
+.copyright a {
+    color: var(--text-white);
+}
+/* Scroll Top */
+#scrollUp {
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    height: 2.813rem;
+    width: 2.813rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 500;
+    display: none;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    background: var(--bg-danger);
+}
+#scrollUp span {
+    line-height: 2.625rem;
+}
+#scrollUp.scrollActive {
+    display: block;
 }
